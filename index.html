@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Neon Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="digital-clock">Okeowo victor</h1>
+    <canvas id="analog-clock" width="500" height="500"></canvas>
+    <button id="speak-btn">🔊 Speak Time</button>
+  </div>
+  <div class="alarm-container">
+    <h3>Set Alarm</h3>
+    <label>
+      Hour:
+      <input type="number" id="alarm-hour" min="1" max="12" />
+    </label>
+    <label>
+      Minute:
+      <input type="number" id="alarm-minute" min="0" max="59" />
+    </label>
+    <label>
+      AM/PM:
+      <select id="alarm-period">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </label>
+    <button id="set-alarm-btn">Set Alarm</button>
+    <p id="alarm-status"></p>
+  </div>
+  <button id="stop-alarm-btn" style="display:none;">Stop Alarm</button>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
